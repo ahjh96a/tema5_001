@@ -1,0 +1,93 @@
+html {
+    height:100%;
+}
+body {
+    height:100%;
+    margin:0;
+    border:0;
+    padding:0;
+    overflow: hidden;
+}
+.wrap {
+    position:relative;
+    top:0;
+    width:100%;height:100%;
+    transition: 0.5s;
+}
+.container {
+    width:100%;height:100%;
+}
+.container:nth-child(1){background-color: rgb(255, 255, 255);}
+.container:nth-child(2){background-color: none;}
+.container:nth-child(3){background-color: yellow;}
+.container:nth-child(4){background-color: red;}
+
+/* 내부 디자인 시작 */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(37, 37, 37);
+    flex-flow: column nowrap;
+}
+.team_name{
+    width: 100%;
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 아직 방문하지 않은 링크의 글자색 정의 */
+a:link {
+  color: rgb(39, 39, 39);
+}
+
+/* 사용자가 방문한 적이 있는(클릭한 이후) 링크의 글자색 
+정의 */
+a:visited {
+  color: black;
+}
+
+/* 마우스를 링크에 올려두었을 때, 글자색을 정의 */
+a:hover {
+  color: rgba(0, 255, 234, 0.521);
+}
+
+/* 마우스로 링크를 클릭하고 뗄 때까지의 글자색을 정의 */
+a:active {
+  color: green;
+}
+
+.ghkdwogh_video_01{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    background-repeat: repeat;
+}
+.videoContent{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1690px;
+    max-height: 900px;
+    position: relative;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
